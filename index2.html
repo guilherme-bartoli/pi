@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./assets/icons8-pegada-de-gato-100.png" />
+    <title>Teste agenda</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        body {
+            background-color: rgb(163, 28, 204);
+        }
+
+        #tela {
+            height: 100%;
+            width: 80%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 270px 270px;
+            grid-template-rows: 170px 170px;
+            justify-content: center;
+            /* column-gap: 10px; */
+        }
+
+        #pets,
+        #veterinario,
+        #banhoTosa,
+        #hotel,
+        #agendamentos {
+            border-radius: 15px;
+            background-color: rgb(252, 252, 93);
+            height: 150px;
+            width: 250px;
+            padding: 20px;
+            margin: 10px;
+            font-size: 16px;
+            display: grid;
+            /* grid-template-columns: auto; */
+            grid-template-rows: 20% auto 80%;
+            align-items: start;
+            /* align-items: center; */
+            justify-content: left;
+            color: black;
+            box-shadow: 2px 5px 10px -1px black;
+            transition: 0.2s;
+        }
+
+        #pets:hover,
+        #veterinario:hover,
+        #banhoTosa:hover,
+        #hotel:hover,
+        #agendamentos:hover {
+            background-color: rgb(255, 255, 53);
+            transform: scale(1.03);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <a href="./index.html"><button>Voltar</button></a>
+
+    <div id="tela">
+
+        <a href="./pets.html"><div id="pets">
+            <h3>PETS</h3>
+            <hr width="210" color="black">
+            <p>Seus pets.</p>
+        </div></a>
+
+        <a href="./veterinario.html"><div id="veterinario">
+            <h3>VETERINÁRIO</h3>
+            <hr width="210" color="black">
+            <p>Agende uma consulta ao veterinário.</p>
+        </div></a>
+
+        <a href="./banhoTosa.html"><div id="banhoTosa">
+            <h3>BANHO E TOSA</h3>
+            <hr width="210" color="black">
+            <p>Agende uma lavagem e um degradê no seu pet.</p>
+        </div></a>
+
+        <a href="./hotel.html"><div id="hotel">
+            <h3>HOTEL</h3>
+            <hr width="210" color="black">
+            <p>Hotel para seu pet.</p>
+        </div></a>
+
+        <a href="./agendamentos.html"><div id="agendamentos">
+            <h3>AGENDAMENTOS</h3>
+            <hr width="210" color="black">
+            <p>Todos os agendamentos dos seus pets.</p>
+        </div></a>
+
+    </div>
+
+    <script src="app.js">
+
+    </script>
+</body>
+
+</html>
